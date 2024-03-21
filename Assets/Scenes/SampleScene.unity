@@ -613,7 +613,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onMusic: {fileID: 21300000, guid: 5fdafd1e5aa62834d80cdfe6b976e373, type: 3}
   offMusic: {fileID: 21300000, guid: 961a76dcdb1775f489bad1729b758fc2, type: 3}
-  MusicButton: {fileID: 110875268}
+  MusicButton: {fileID: 110875269}
   isOn: 1
   ad: {fileID: 730669403}
 --- !u!82 &730669403
