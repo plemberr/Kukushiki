@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 58070476}
   - component: {fileID: 58070475}
   m_Layer: 0
-  m_Name: object1
+  m_Name: dark
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -181,7 +181,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: 79d763244c0816548b7d0c701c0e566d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 277127e3aa9c68d4aa4096e26ef2b5a9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -218,7 +218,7 @@ GameObject:
   - component: {fileID: 616338816}
   - component: {fileID: 616338815}
   m_Layer: 0
-  m_Name: object5
+  m_Name: "\u043E\u043A\u043D\u043E \u0442\u0435\u043E\u0440\u0438\u0438"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -390,7 +390,7 @@ GameObject:
   - component: {fileID: 699293962}
   - component: {fileID: 699293966}
   m_Layer: 5
-  m_Name: object3
+  m_Name: arrow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -412,8 +412,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -952.46, y: -543.55}
-  m_SizeDelta: {x: 1.6083, y: 1.5631}
+  m_AnchoredPosition: {x: -953.33, y: -539.47}
+  m_SizeDelta: {x: 2.3036, y: 2.1951}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!61 &699293962
 BoxCollider2D:
@@ -447,7 +447,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.02176714, y: -0.032650948}
+  m_Offset: {x: 0.011233568, y: -0.043185115}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -458,7 +458,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.4571123, y: 0.9346981}
+  m_Size: {x: 2.0680842, y: 1.7563498}
   m_EdgeRadius: 0
 --- !u!114 &699293963
 MonoBehaviour:
@@ -524,7 +524,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9724ff28b928c2c4c85805792868a063, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 63db5e6e866de59458330010f3b822ec, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -667,7 +667,7 @@ GameObject:
   - component: {fileID: 1136427691}
   - component: {fileID: 1136427690}
   m_Layer: 0
-  m_Name: "\u0442\u0435\u043A\u0441\u0442"
+  m_Name: "\u0442\u0435\u043A\u0441\u0442 \u043A\u043E\u0442\u0430"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -713,7 +713,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: 3ae8e3884ba502f409bea4d9402554c2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -734,7 +734,7 @@ Transform:
   m_GameObject: {fileID: 1136427689}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.86, y: 1.67, z: 0}
+  m_LocalPosition: {x: -1.67, y: 0.38, z: 0}
   m_LocalScale: {x: 0.4959, y: 0.47133866, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -820,7 +820,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_TargetDisplay: 0
 --- !u!224 &1211741126
 RectTransform:
@@ -853,7 +853,7 @@ GameObject:
   - component: {fileID: 1251885224}
   - component: {fileID: 1251885223}
   m_Layer: 0
-  m_Name: "\u043F\u0438\u0437\u0434\u0435\u0446 2 (1)"
+  m_Name: "\u0432\u0432\u043E\u0434 \u043E\u0442\u0432\u0435\u0442\u0430"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -937,7 +937,7 @@ GameObject:
   - component: {fileID: 1264312279}
   - component: {fileID: 1264312278}
   m_Layer: 0
-  m_Name: object2
+  m_Name: cat_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1004,8 +1004,8 @@ Transform:
   m_GameObject: {fileID: 1264312277}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.59, y: -1.92, z: 0}
-  m_LocalScale: {x: 0.869, y: 0.869, z: 1}
+  m_LocalPosition: {x: 6.15, y: -3.02, z: 0}
+  m_LocalScale: {x: 0.7594191, y: 0.7741052, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1021,7 +1021,7 @@ GameObject:
   - component: {fileID: 1515771873}
   - component: {fileID: 1515771872}
   m_Layer: 0
-  m_Name: "\u043F\u0438\u0437\u0434\u0435\u0446 2"
+  m_Name: "\u043E\u043A\u043D\u043E \u0437\u0430\u0434\u0430\u043D\u0438\u044F"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1068,7 +1068,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 0da18ba6e6d99f74aac10cae86cd9c27, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fc93cb257ddd7434488af369225aa14e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1088,8 +1088,8 @@ Transform:
   m_GameObject: {fileID: 1515771871}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.12, y: 2.57, z: 0}
-  m_LocalScale: {x: 0.9115, y: 0.34915105, z: 1}
+  m_LocalPosition: {x: -0.05, y: -0.49, z: 0}
+  m_LocalScale: {x: 0.8512097, y: 0.9012019, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1173,7 +1173,7 @@ GameObject:
   - component: {fileID: 1943572145}
   - component: {fileID: 1943572144}
   m_Layer: 0
-  m_Name: "\u0442\u0435\u043A\u0441\u0442 (2)"
+  m_Name: "\u0442\u0435\u043A\u0441\u0442 \u0437\u0430\u0434\u0430\u043D\u0438\u044F"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1257,7 +1257,7 @@ GameObject:
   - component: {fileID: 1957087078}
   - component: {fileID: 1957087077}
   m_Layer: 0
-  m_Name: "\u0442\u0435\u043A\u0441\u0442 (1)"
+  m_Name: "\u0442\u0435\u043E\u0440\u0438\u044F"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1341,7 +1341,7 @@ GameObject:
   - component: {fileID: 2074042634}
   - component: {fileID: 2074042633}
   m_Layer: 0
-  m_Name: free-icon-speech-bubble-1487432
+  m_Name: cloud
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1388,7 +1388,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: 21300000, guid: 878f06ebb46352f439a562820043d11d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5080dfb71e09c6346a73f54fcb53cef9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1408,8 +1408,8 @@ Transform:
   m_GameObject: {fileID: 2074042632}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.52, y: 0.88, z: 0}
-  m_LocalScale: {x: -2.135229, y: 2.2048585, z: 1}
+  m_LocalPosition: {x: -1.58, y: 0.41, z: 0}
+  m_LocalScale: {x: -0.8490666, y: 0.85238147, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1422,12 +1422,12 @@ SceneRoots:
   - {fileID: 641717676}
   - {fileID: 1211741126}
   - {fileID: 1916777510}
-  - {fileID: 616338816}
-  - {fileID: 58070476}
   - {fileID: 1264312279}
   - {fileID: 2074042634}
+  - {fileID: 58070476}
   - {fileID: 1136427691}
+  - {fileID: 616338816}
   - {fileID: 1957087078}
   - {fileID: 1515771873}
-  - {fileID: 1251885224}
   - {fileID: 1943572145}
+  - {fileID: 1251885224}
