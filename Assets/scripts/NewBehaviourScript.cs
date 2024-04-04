@@ -1,20 +1,30 @@
 using UnityEngine;
+using UnityEngine.UI;
 
-public class YourOtherScript : MonoBehaviour
+public class ButtonController : MonoBehaviour
 {
-    private SublevelObjectManager sublevelManager;
+    public Button switchButton;
+    public GameObject[] objectsToHide;
+    public GameObject[] objectsToShow;
 
     void Start()
     {
-        sublevelManager = GameObject.Find("SublevelManager").GetComponent<SublevelObjectManager>();
+        switchButton.onClick.AddListener(OnSwitchButtonClick);
     }
 
-    void Update()
+    void OnSwitchButtonClick()
     {
-        // Например, вызов смены подуровня при нажатии клавиши
-        if (Input.GetKeyDown(KeyCode.Space))
+        // Скрыть объекты, которые нужно убрать
+        foreach (GameObject obj in objectsToHide)
         {
-            sublevelManager.SwitchSublevel(1); // Переключение на подуровень с индексом 1
+            obj.SetActive(false);
+        }
+
+        // Показать объекты, которые нужно показать
+        foreach (GameObject obj in objectsToShow)
+        {
+            obj.SetActive(true);
         }
     }
 }
+
