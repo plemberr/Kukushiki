@@ -8,10 +8,6 @@ public class LevelManager : MonoBehaviour
     public GameObject object3;
     public GameObject object4;
     public GameObject object5;
-    public GameObject object6;
-    public GameObject object7;
-    public GameObject object8;
-    public GameObject object9;
 
     public GameObject[][] sublevelObjects;
     private int currentSublevelIndex = 0;
@@ -23,9 +19,9 @@ public class LevelManager : MonoBehaviour
         // Инициализация массивов объектов для каждого подуровня
         sublevelObjects = new GameObject[][]
         {
-            new GameObject[] { object1, object2, object3, object4 }, // Первый подуровень
-            new GameObject[] { object5, object6 },                   // Второй подуровень
-            new GameObject[] { object7, object8, object9 }           // Третий подуровень
+            new GameObject[] { object1, object2, object3 }, // Первый подуровень
+            new GameObject[] { object4 },                   // Второй подуровень
+            new GameObject[] { object5 }           // Третий подуровень
         };
 
         // Показываем объекты для текущего подуровня
