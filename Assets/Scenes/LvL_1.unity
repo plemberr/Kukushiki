@@ -831,14 +831,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa3243797628d8643ab691312deb942d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  answerInputField: {fileID: 186715495}
-  object1: {fileID: 58070474}
-  object2: {fileID: 1264312277}
+  object1: {fileID: 1264312277}
+  object2: {fileID: 58070474}
   object3: {fileID: 1298795088}
   object4: {fileID: 1099373251}
   object5: {fileID: 1962603088}
-  object6: {fileID: 186715493}
   switchButton: {fileID: 699293963}
+  answerInputField: {fileID: 186715495}
 --- !u!1 &1023018033
 GameObject:
   m_ObjectHideFlags: 0

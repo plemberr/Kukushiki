@@ -1,62 +1,42 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-using System.Collections.Generic;
-using TMPro;
 
 public class LevelManager : MonoBehaviour
 {
-    public TMP_InputField answerInputField;
-    public List<List<GameObject>> sublevelObjects;
-
     public GameObject object1;
     public GameObject object2;
     public GameObject object3;
     public GameObject object4;
     public GameObject object5;
-    public GameObject object6;
 
+    public GameObject[][] sublevelObjects;
     private int currentSublevelIndex = 0;
-    private bool isAnswerCorrect = false;
 
     public Button switchButton; // Ссылка на кнопку в Unity Editor
+    public TMP_InputField answerInputField; // Поле для ввода ответа
 
     void Start()
     {
-        // Инициализация списка объектов для каждого подуровня
-        sublevelObjects = new List<List<GameObject>>
+        // Инициализация массивов объектов для каждого подуровня
+        sublevelObjects = new GameObject[][]
         {
-            new List<GameObject> { object1, object2, object3 }, // Первый подуровень
-            new List<GameObject> { object4 },                   // Второй подуровень
-            new List<GameObject> { object5, object6 }           // Третий подуровень
+            new GameObject[] { object1, object2, object3 }, // Первый подуровень
+            new GameObject[] { object4 },                   // Второй подуровень
+            new GameObject[] { object5 }                     // Третий подуровень
         };
 
         // Показываем объекты для текущего подуровня
-        SwitchSublevelObjects();
+        SwitchSublevelObjects(currentSublevelIndex);
 
-        // Привязываем метод SwitchSublevelObjects к событию нажатия на кнопку
-        switchButton.onClick.AddListener(SwitchSublevelObjects);
+        // Привязываем метод IncreaseSublevelIndex к событию нажатия на кнопку
+        switchButton.onClick.AddListener(IncreaseSublevelIndex);
     }
 
-    public void SwitchSublevelObjects()
+    public void SwitchSublevelObjects(int sublevelIndex)
     {
-        // Проверяем правильность ответа
-        if (currentSublevelIndex >= 2 && !string.IsNullOrEmpty(answerInputField.text))
-        {
-            isAnswerCorrect = IsCorrectAnswer(answerInputField.text);
-            if (isAnswerCorrect)
-            {
-                currentSublevelIndex++;
-                if (currentSublevelIndex >= sublevelObjects.Count)
-                {
-                    // Если достигнут конец списка подуровней, переключаем на первый
-                    currentSublevelIndex = 0;
-                }
-                answerInputField.text = "";
-            }
-        }
-
         // Скрываем все объекты
-        foreach (List<GameObject> objs in sublevelObjects)
+        foreach (GameObject[] objs in sublevelObjects)
         {
             foreach (GameObject obj in objs)
             {
@@ -65,20 +45,41 @@ public class LevelManager : MonoBehaviour
         }
 
         // Показываем объекты для указанного подуровня
-        foreach (GameObject obj in sublevelObjects[currentSublevelIndex])
+        foreach (GameObject obj in sublevelObjects[sublevelIndex])
         {
             obj.SetActive(true);
-            currentSublevelIndex++;
         }
 
+        // Устанавливаем текущий индекс подуровня
+        currentSublevelIndex = sublevelIndex;
+    }
 
+    public void IncreaseSublevelIndex()
+    {
+        // Проверяем правильность ответа только при переходе с второго на третий подуровень
+        if (currentSublevelIndex == 1 && !IsCorrectAnswer(answerInputField.text))
+        {
+            // Если ответ неправильный, просто выходим из метода
+            return;
+        }
 
+        // Увеличиваем индекс на 1
+        currentSublevelIndex++;
+
+        // Переключаем объекты на следующий подуровень
+        if (currentSublevelIndex >= sublevelObjects.Length)
+        {
+            currentSublevelIndex = 0; // Если достигнут конец списка подуровней, переключаем на первый
+        }
+
+        SwitchSublevelObjects(currentSublevelIndex);
     }
 
     private bool IsCorrectAnswer(string answer)
     {
         // Здесь ваша логика проверки правильности ответа
-        return answer == "0";
+        return answer == "0"; // Пример: ответ правильный, если введено "0"
     }
 }
+
 
