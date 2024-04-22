@@ -9,6 +9,20 @@ public class LevelManager : MonoBehaviour
     public GameObject object3;
     public GameObject object4;
     public GameObject object5;
+    public GameObject object6;
+    public GameObject object7;
+    public GameObject object8;
+    public GameObject object9;
+    public GameObject object10;
+    public GameObject object11;
+    public GameObject object12;
+    public GameObject object13;
+    public GameObject object14;
+    public GameObject object15;
+    public GameObject object16;
+    public GameObject object17;
+    public GameObject object18;
+    public GameObject object19;
 
     public GameObject[][] sublevelObjects;
     private int currentSublevelIndex = 0;
@@ -16,15 +30,26 @@ public class LevelManager : MonoBehaviour
     public Button switchButton; // Ссылка на кнопку в Unity Editor
     public TMP_InputField answerInputField; // Поле для ввода ответа
 
+    public Sprite[] buttonSprites; // Массив спрайтов кнопки
+    private Image switchButtonImage; // Ссылка на компонент Image кнопки
+
     void Start()
     {
         // Инициализация массивов объектов для каждого подуровня
         sublevelObjects = new GameObject[][]
         {
             new GameObject[] { object1, object2, object3 }, // Первый подуровень
-            new GameObject[] { object4 },                   // Второй подуровень
-            new GameObject[] { object5 }                     // Третий подуровень
+            new GameObject[] { object4, object5, object6 },                   // Второй подуровень
+            new GameObject[] { object7, object8, object18 },                     // Третий подуровень
+            new GameObject[] { object9, object10, object19},
+            new GameObject[] { object11 },
+            new GameObject[] { object12, object13 },
+            new GameObject[] { object14, object15 },
+            new GameObject[] { object16, object17 }
         };
+
+        // Получаем ссылку на компонент Image кноп0ки
+        switchButtonImage = switchButton.GetComponent<Image>();
 
         // Показываем объекты для текущего подуровня
         SwitchSublevelObjects(currentSublevelIndex);
@@ -52,12 +77,15 @@ public class LevelManager : MonoBehaviour
 
         // Устанавливаем текущий индекс подуровня
         currentSublevelIndex = sublevelIndex;
+
+        // Меняем спрайт кнопки
+        switchButtonImage.sprite = buttonSprites[currentSublevelIndex];
     }
 
     public void IncreaseSublevelIndex()
     {
         // Проверяем правильность ответа только при переходе с второго на третий подуровень
-        if (currentSublevelIndex == 1 && !IsCorrectAnswer(answerInputField.text))
+        if (currentSublevelIndex == 5 && !IsCorrectAnswer(answerInputField.text))
         {
             // Если ответ неправильный, просто выходим из метода
             return;
@@ -81,5 +109,6 @@ public class LevelManager : MonoBehaviour
         return answer == "0"; // Пример: ответ правильный, если введено "0"
     }
 }
+
 
 
