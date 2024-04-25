@@ -884,8 +884,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 799, y: -410}
-  m_SizeDelta: {x: 250, y: 250}
+  m_AnchoredPosition: {x: 557, y: -426}
+  m_SizeDelta: {x: 766.8, y: 157.41}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!61 &699293962
 BoxCollider2D:
@@ -996,7 +996,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 63db5e6e866de59458330010f3b822ec, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f9cd0bd9d850ef54fb481094e2801c21, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1048,14 +1048,18 @@ MonoBehaviour:
   switchButton: {fileID: 699293963}
   answerInputField: {fileID: 1197905953}
   buttonSprites:
-  - {fileID: 21300000, guid: 63db5e6e866de59458330010f3b822ec, type: 3}
-  - {fileID: 21300000, guid: fb7fc07a414e7eb42a00e8cb0b002821, type: 3}
-  - {fileID: 21300000, guid: 5d5e91d9bbf825049985b2b8cf95bfe9, type: 3}
-  - {fileID: 21300000, guid: 63db5e6e866de59458330010f3b822ec, type: 3}
-  - {fileID: 21300000, guid: 63db5e6e866de59458330010f3b822ec, type: 3}
-  - {fileID: 21300000, guid: 63db5e6e866de59458330010f3b822ec, type: 3}
-  - {fileID: 21300000, guid: 63db5e6e866de59458330010f3b822ec, type: 3}
-  - {fileID: 21300000, guid: 63db5e6e866de59458330010f3b822ec, type: 3}
+  - {fileID: 21300000, guid: f9cd0bd9d850ef54fb481094e2801c21, type: 3}
+  - {fileID: 21300000, guid: 382c007eaa12cf54e8f971fec6e9e7fc, type: 3}
+  - {fileID: 21300000, guid: 56705d6183a508146917e77dc832865d, type: 3}
+  - {fileID: 21300000, guid: f9cd0bd9d850ef54fb481094e2801c21, type: 3}
+  - {fileID: 21300000, guid: f9cd0bd9d850ef54fb481094e2801c21, type: 3}
+  - {fileID: 21300000, guid: f9cd0bd9d850ef54fb481094e2801c21, type: 3}
+  - {fileID: 21300000, guid: f9cd0bd9d850ef54fb481094e2801c21, type: 3}
+  - {fileID: 21300000, guid: f9cd0bd9d850ef54fb481094e2801c21, type: 3}
+  correctAnswers:
+  - 0
+  - 1
+  - 2
 --- !u!1 &701493378
 GameObject:
   m_ObjectHideFlags: 0
@@ -2597,8 +2601,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:

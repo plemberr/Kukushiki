@@ -33,6 +33,9 @@ public class LevelManager : MonoBehaviour
     public Sprite[] buttonSprites; // Массив спрайтов кнопки
     private Image switchButtonImage; // Ссылка на компонент Image кнопки
 
+    public string[] correctAnswers = { "answer1", "answer1", "answer1" }; // Правильные ответы для первого уровня
+    
+
     void Start()
     {
         // Инициализация массивов объектов для каждого подуровня
@@ -60,6 +63,8 @@ public class LevelManager : MonoBehaviour
 
     public void SwitchSublevelObjects(int sublevelIndex)
     {
+        answerInputField.text = "";
+
         // Скрываем все объекты
         foreach (GameObject[] objs in sublevelObjects)
         {
@@ -85,7 +90,7 @@ public class LevelManager : MonoBehaviour
     public void IncreaseSublevelIndex()
     {
         // Проверяем правильность ответа только при переходе с второго на третий подуровень
-        if (currentSublevelIndex == 5 && !IsCorrectAnswer(answerInputField.text))
+        if (currentSublevelIndex >= 5 && !IsCorrectAnswer(answerInputField.text, currentSublevelIndex))
         {
             // Если ответ неправильный, просто выходим из метода
             return;
@@ -103,11 +108,11 @@ public class LevelManager : MonoBehaviour
         SwitchSublevelObjects(currentSublevelIndex);
     }
 
-    private bool IsCorrectAnswer(string answer)
+    private bool IsCorrectAnswer(string answer, int num)
     {
-        // Здесь ваша логика проверки правильности ответа
-        return answer == "0"; // Пример: ответ правильный, если введено "0"
+        return answer == correctAnswers[num-5];
     }
+
 }
 
 
