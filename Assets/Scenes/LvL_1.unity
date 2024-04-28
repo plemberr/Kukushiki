@@ -1057,9 +1057,9 @@ MonoBehaviour:
   - {fileID: 21300000, guid: f9cd0bd9d850ef54fb481094e2801c21, type: 3}
   - {fileID: 21300000, guid: f9cd0bd9d850ef54fb481094e2801c21, type: 3}
   correctAnswers:
-  - 0
-  - 1
-  - 2
+  - 0.5
+  - 62
+  - 50.7
 --- !u!1 &701493378
 GameObject:
   m_ObjectHideFlags: 0
@@ -2440,7 +2440,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 5a27a29f3d34bee40805e9f87169c367, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e1731a367beb9324f85608c5f823ada3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
