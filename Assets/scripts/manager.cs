@@ -1,5 +1,7 @@
 using TMPro;
+using UnityEditor;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class LevelManager : MonoBehaviour
@@ -34,7 +36,10 @@ public class LevelManager : MonoBehaviour
     private Image switchButtonImage; // Ссылка на компонент Image кнопки
 
     public string[] correctAnswers = { "answer1", "answer1", "answer1" }; // Правильные ответы для первого уровня
-    
+
+    public SceneAsset nextScene;
+    public GameObject errorImage;
+
 
     void Start()
     {
@@ -89,11 +94,12 @@ public class LevelManager : MonoBehaviour
 
     public void IncreaseSublevelIndex()
     {
-        // Проверяем правильность ответа только при переходе с второго на третий подуровень
         if (currentSublevelIndex >= 5 && !IsCorrectAnswer(answerInputField.text, currentSublevelIndex))
         {
             // Если ответ неправильный, просто выходим из метода
-            return;
+            // Если ответ неправильный, показываем объект картинки с ошибкой
+            errorImage.SetActive(true);
+            return; // Прерываем выполнение метода, чтобы не продолжать переход на следующий подуровень
         }
 
         // Увеличиваем индекс на 1
@@ -102,7 +108,7 @@ public class LevelManager : MonoBehaviour
         // Переключаем объекты на следующий подуровень
         if (currentSublevelIndex >= sublevelObjects.Length)
         {
-            currentSublevelIndex = 0; // Если достигнут конец списка подуровней, переключаем на первый
+            SceneManager.LoadScene(nextScene.name);
         }
 
         SwitchSublevelObjects(currentSublevelIndex);
@@ -110,10 +116,8 @@ public class LevelManager : MonoBehaviour
 
     private bool IsCorrectAnswer(string answer, int num)
     {
-        return answer == correctAnswers[num-5];
+        return answer == correctAnswers[num - 5];
     }
-
 }
-
 
 
