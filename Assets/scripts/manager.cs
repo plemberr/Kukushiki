@@ -3,6 +3,8 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.UIElements;
+using Image = UnityEngine.UI.Image;
 
 public class LevelManager : MonoBehaviour
 {
@@ -29,20 +31,23 @@ public class LevelManager : MonoBehaviour
     public GameObject[][] sublevelObjects;
     private int currentSublevelIndex = 0;
 
-    public Button switchButton; // Ссылка на кнопку в Unity Editor
+    public UnityEngine.UI.Button switchButton; // Ссылка на кнопку в Unity Editor
     public TMP_InputField answerInputField; // Поле для ввода ответа
 
     public Sprite[] buttonSprites; // Массив спрайтов кнопки
-    private Image switchButtonImage; // Ссылка на компонент Image кнопки
+    private UnityEngine.UI.Image switchButtonImage; // Ссылка на компонент Image кнопки
 
     public string[] correctAnswers = { "answer1", "answer1", "answer1" }; // Правильные ответы для первого уровня
 
     public SceneAsset nextScene;
-    public GameObject errorImage;
-
+    public UnityEngine.UI.Image errorImage;
+    public UnityEngine.UI.Button closeButton; // Кнопка крестика
 
     void Start()
     {
+        errorImage.gameObject.SetActive(false);
+        closeButton.gameObject.SetActive(false);
+
         // Инициализация массивов объектов для каждого подуровня
         sublevelObjects = new GameObject[][]
         {
@@ -56,7 +61,7 @@ public class LevelManager : MonoBehaviour
             new GameObject[] { object16, object17 }
         };
 
-        // Получаем ссылку на компонент Image кноп0ки
+        // Получаем ссылку на компонент Image кнопки
         switchButtonImage = switchButton.GetComponent<Image>();
 
         // Показываем объекты для текущего подуровня
@@ -64,6 +69,9 @@ public class LevelManager : MonoBehaviour
 
         // Привязываем метод IncreaseSublevelIndex к событию нажатия на кнопку
         switchButton.onClick.AddListener(IncreaseSublevelIndex);
+
+        // Привязываем метод OnCloseButtonClick к событию нажатия на кнопку крестика
+        closeButton.onClick.AddListener(OnCloseButtonClick);
     }
 
     public void SwitchSublevelObjects(int sublevelIndex)
@@ -96,10 +104,9 @@ public class LevelManager : MonoBehaviour
     {
         if (currentSublevelIndex >= 5 && !IsCorrectAnswer(answerInputField.text, currentSublevelIndex))
         {
-            // Если ответ неправильный, просто выходим из метода
-            // Если ответ неправильный, показываем объект картинки с ошибкой
-            errorImage.SetActive(true);
-            return; // Прерываем выполнение метода, чтобы не продолжать переход на следующий подуровень
+            closeButton.gameObject.SetActive(true);
+            errorImage.gameObject.SetActive(true);
+            return;
         }
 
         // Увеличиваем индекс на 1
@@ -116,8 +123,23 @@ public class LevelManager : MonoBehaviour
 
     private bool IsCorrectAnswer(string answer, int num)
     {
-        return answer == correctAnswers[num - 5];
+        // Проверяем, что num находится в допустимом диапазоне для массива correctAnswers
+        if (num >= 5 && num - 5 < correctAnswers.Length)
+        {
+            // Если num в допустимом диапазоне, проверяем правильность ответа
+            return answer == correctAnswers[num - 5];
+        }
+        else
+        {
+            // Если num находится за пределами допустимого диапазона, считаем ответ неправильным
+            return false;
+        }
+    }
+
+    public void OnCloseButtonClick()
+    {   
+        // Скрываем изображение ошибки при нажатии на кнопку крестика
+        errorImage.gameObject.SetActive(false);
+        closeButton.gameObject.SetActive(false);
     }
 }
-
-
