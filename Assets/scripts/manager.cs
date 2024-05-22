@@ -3,33 +3,17 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using System.Collections.Generic;
 
-public class LevelManager : MonoBehaviour
+[System.Serializable]
+public class Sublevel
 {
-    public GameObject object1;
-    public GameObject object2;
-    public GameObject object3;
-    public GameObject object4;
-    public GameObject object5;
-    public GameObject object6;
-    public GameObject object7;
-    public GameObject object8;
-    public GameObject object9;
-    public GameObject object10;
-    public GameObject object11;
-    public GameObject object12;
-    public GameObject object13;
-    public GameObject object14;
-    public GameObject object15;
-    public GameObject object16;
-    public GameObject object17;
-    public GameObject object18;
-    public GameObject object19;
-    public GameObject object20;
+    public GameObject[] objects;
+}
 
-    public GameObject support;
-
-    public GameObject[][] sublevelObjects;
+public class manager : MonoBehaviour
+{
+    public List<Sublevel> sublevels = new List<Sublevel>();
     private int currentSublevelIndex = 0;
 
     public Button switchButton; // Ссылка на кнопку в Unity Editor
@@ -38,7 +22,10 @@ public class LevelManager : MonoBehaviour
     public Sprite[] buttonSprites; // Массив спрайтов кнопки
     private Image switchButtonImage; // Ссылка на компонент Image кнопки
 
-    public string[] correctAnswers = { "answer1", "answer1", "answer1" }; // Правильные ответы для первого уровня
+    public string[] correctAnswers; // Правильные ответы для уровня
+
+    public int answerCheckStartIndexFromEnd = 4; // Начало проверки ответов (от конца)
+    public int answerCheckEndIndexFromEnd = 2; // Конец проверки ответов (от конца)
 
     public SceneAsset nextScene;
     public Image errorImage;
@@ -46,61 +33,63 @@ public class LevelManager : MonoBehaviour
 
     void Start()
     {
-        errorImage.gameObject.SetActive(false);
-        closeButton.gameObject.SetActive(false);
-        support.SetActive(false);
+        if (errorImage != null)
+            errorImage.gameObject.SetActive(false);
+        if (closeButton != null)
+            closeButton.gameObject.SetActive(false);
 
-        // Инициализация массивов объектов для каждого подуровня
-        sublevelObjects = new GameObject[][]
+        if (switchButton != null)
         {
-            new GameObject[] { object1, object2, object3 }, // Первый подуровень
-            new GameObject[] { object4, object5, object6 }, // Второй подуровень
-            new GameObject[] { object7, object8, object18 }, // Третий подуровень
-            new GameObject[] { object9, object10, object19 },
-            new GameObject[] { object11 },
-            new GameObject[] { object12, object13 },
-            new GameObject[] { object14, object15 },
-            new GameObject[] { object16, object17 },
-            new GameObject[] { object20 }
-        };
+            // Получаем ссылку на компонент Image кнопки
+            switchButtonImage = switchButton.GetComponent<Image>();
 
-        // Получаем ссылку на компонент Image кнопки
-        switchButtonImage = switchButton.GetComponent<Image>();
+            // Показываем объекты для текущего подуровня
+            SwitchSublevelObjects(currentSublevelIndex);
 
-        // Показываем объекты для текущего подуровня
-        SwitchSublevelObjects(currentSublevelIndex);
+            // Привязываем метод IncreaseSublevelIndex к событию нажатия на кнопку
+            switchButton.onClick.AddListener(IncreaseSublevelIndex);
+        }
 
-        // Привязываем метод IncreaseSublevelIndex к событию нажатия на кнопку
-        switchButton.onClick.AddListener(IncreaseSublevelIndex);
-
-        // Привязываем метод OnCloseButtonClick к событию нажатия на кнопку крестика
-        closeButton.onClick.AddListener(OnCloseButtonClick);
+        if (closeButton != null)
+        {
+            // Привязываем метод OnCloseButtonClick к событию нажатия на кнопку крестика
+            closeButton.onClick.AddListener(OnCloseButtonClick);
+        }
     }
 
     public void SwitchSublevelObjects(int sublevelIndex)
     {
-        answerInputField.text = "";
+        if (answerInputField != null)
+        {
+            answerInputField.text = "";
+        }
 
         // Скрываем все объекты
-        foreach (GameObject[] objs in sublevelObjects)
+        foreach (Sublevel sublevel in sublevels)
         {
-            foreach (GameObject obj in objs)
+            foreach (GameObject obj in sublevel.objects)
             {
-                obj.SetActive(false);
+                if (obj != null)
+                {
+                    obj.SetActive(false);
+                }
             }
         }
 
-        // Проверка, что sublevelIndex не выходит за пределы массива
-        if (sublevelIndex >= 0 && sublevelIndex < sublevelObjects.Length)
+        // Проверка, что sublevelIndex не выходит за пределы списка
+        if (sublevelIndex >= 0 && sublevelIndex < sublevels.Count)
         {
             // Показываем объекты для указанного подуровня
-            foreach (GameObject obj in sublevelObjects[sublevelIndex])
+            foreach (GameObject obj in sublevels[sublevelIndex].objects)
             {
-                obj.SetActive(true);
+                if (obj != null)
+                {
+                    obj.SetActive(true);
+                }
             }
 
             // Меняем спрайт кнопки, если индекс в пределах массива buttonSprites
-            if (sublevelIndex < buttonSprites.Length)
+            if (sublevelIndex < buttonSprites.Length && switchButtonImage != null)
             {
                 switchButtonImage.sprite = buttonSprites[sublevelIndex];
             }
@@ -112,10 +101,20 @@ public class LevelManager : MonoBehaviour
 
     public void IncreaseSublevelIndex()
     {
-        if ((currentSublevelIndex >= 5 && currentSublevelIndex < 8) && !IsCorrectAnswer(answerInputField.text, currentSublevelIndex))
+        int totalSublevels = sublevels.Count;
+        int answerCheckStartIndex = totalSublevels - answerCheckStartIndexFromEnd;
+        int answerCheckEndIndex = totalSublevels - answerCheckEndIndexFromEnd;
+
+        if ((currentSublevelIndex >= answerCheckStartIndex && currentSublevelIndex < answerCheckEndIndex) && !IsCorrectAnswer(answerInputField.text, currentSublevelIndex - answerCheckStartIndex))
         {
-            closeButton.gameObject.SetActive(true);
-            errorImage.gameObject.SetActive(true);
+            if (closeButton != null)
+            {
+                closeButton.gameObject.SetActive(true);
+            }
+            if (errorImage != null)
+            {
+                errorImage.gameObject.SetActive(true);
+            }
             return;
         }
 
@@ -123,9 +122,16 @@ public class LevelManager : MonoBehaviour
         currentSublevelIndex++;
 
         // Переключаем объекты на следующий подуровень
-        if (currentSublevelIndex >= sublevelObjects.Length)
+        if (currentSublevelIndex >= sublevels.Count)
         {
-            SceneManager.LoadScene(nextScene.name);
+            if (nextScene != null)
+            {
+                SceneManager.LoadScene(nextScene.name);
+            }
+            else
+            {
+                Debug.LogError("Next scene is not set.");
+            }
         }
         else
         {
@@ -135,15 +141,13 @@ public class LevelManager : MonoBehaviour
 
     private bool IsCorrectAnswer(string answer, int num)
     {
-        // Проверяем, что num находится в допустимом диапазоне для массива correctAnswers
-        if (num >= 5 && num - 5 < correctAnswers.Length)
+        // Проверяем правильность ответа в пределах массива correctAnswers
+        if (num >= 0 && num < correctAnswers.Length)
         {
-            // Если num в допустимом диапазоне, проверяем правильность ответа
-            return answer == correctAnswers[num - 5];
+            return answer == correctAnswers[num];
         }
         else
         {
-            // Если num находится за пределами допустимого диапазона, считаем ответ неправильным
             return false;
         }
     }
@@ -151,7 +155,15 @@ public class LevelManager : MonoBehaviour
     public void OnCloseButtonClick()
     {
         // Скрываем изображение ошибки при нажатии на кнопку крестика
-        errorImage.gameObject.SetActive(false);
-        closeButton.gameObject.SetActive(false);
+        if (errorImage != null)
+        {
+            errorImage.gameObject.SetActive(false);
+        }
+        if (closeButton != null)
+        {
+            closeButton.gameObject.SetActive(false);
+        }
     }
 }
+
+
