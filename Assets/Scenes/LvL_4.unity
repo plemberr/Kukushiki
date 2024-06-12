@@ -480,7 +480,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: 5080dfb71e09c6346a73f54fcb53cef9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 93114a9ff2253844ea2ebe7e16327e79, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1809,7 +1809,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: 5080dfb71e09c6346a73f54fcb53cef9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 52b418f5ac67421428599816caec4fe8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2630,6 +2630,8 @@ MonoBehaviour:
     - {fileID: 984301654}
   - objects:
     - {fileID: 792752885}
+  - objects:
+    - {fileID: 1539438660}
   switchButton: {fileID: 1657327615}
   answerInputField: {fileID: 458748039}
   buttonSprites:
@@ -2638,8 +2640,8 @@ MonoBehaviour:
   - 0.5
   - 62
   - 50.7
-  answerCheckStartIndexFromEnd: 6
-  answerCheckEndIndexFromEnd: 3
+  answerCheckStartIndexFromEnd: 7
+  answerCheckEndIndexFromEnd: 4
   nextScene: {fileID: 102900000, guid: ad3a771d148ea3d42a44d3bc4defe465, type: 3}
   errorImage: {fileID: 1431413176}
   closeButton: {fileID: 337175905}
@@ -3011,7 +3013,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: 5080dfb71e09c6346a73f54fcb53cef9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f9ae1a1c285ff9c429c50aef3e64cd70, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3313,7 +3315,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: 5080dfb71e09c6346a73f54fcb53cef9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a23ce1999b8d8294eaa65550d03bcfc3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
