@@ -27,6 +27,9 @@ public class manager : MonoBehaviour
     public int answerCheckStartIndexFromEnd = 4; // Начало проверки ответов (от конца)
     public int answerCheckEndIndexFromEnd = 2; // Конец проверки ответов (от конца)
 
+    public int puzzleEpisodes = 5; // эпизод с пазлом
+    public int puzzleNumber = 1;
+
     public SceneAsset nextScene;
     public Image errorImage;
     public Button closeButton; // Кнопка крестика
@@ -120,6 +123,11 @@ public class manager : MonoBehaviour
 
         // Увеличиваем индекс на 1
         currentSublevelIndex++;
+
+        if (currentSublevelIndex == puzzleEpisodes)
+        {
+            PuzzleManager.AddPuzzlePiece(puzzleNumber);
+        }
 
         // Переключаем объекты на следующий подуровень
         if (currentSublevelIndex >= sublevels.Count)

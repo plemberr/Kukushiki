@@ -958,11 +958,13 @@ MonoBehaviour:
   buttonSprites:
   - {fileID: 21300000, guid: 4404c195f42196240ad50d50de96bc85, type: 3}
   correctAnswers:
-  - 0.5
-  - 62
+  - 5
+  - 2
   - 50.7
   answerCheckStartIndexFromEnd: 4
   answerCheckEndIndexFromEnd: 1
+  puzzleEpisodes: 5
+  puzzleNumber: 1
   nextScene: {fileID: 102900000, guid: c0736dffcde447642ab84068ec9736c7, type: 3}
   errorImage: {fileID: 2146193792}
   closeButton: {fileID: 1686735874}

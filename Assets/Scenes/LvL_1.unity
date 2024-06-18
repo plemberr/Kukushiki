@@ -1387,6 +1387,8 @@ MonoBehaviour:
   - 50.7
   answerCheckStartIndexFromEnd: 4
   answerCheckEndIndexFromEnd: 1
+  puzzleEpisodes: 8
+  puzzleNumber: 0
   nextScene: {fileID: 102900000, guid: 12b612f04c0294a46820eab0996c93eb, type: 3}
   errorImage: {fileID: 1444364742}
   closeButton: {fileID: 749551186}
@@ -2205,7 +2207,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1242197730}
   m_Layer: 0
-  m_Name: ep. 10
+  m_Name: ep. 9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

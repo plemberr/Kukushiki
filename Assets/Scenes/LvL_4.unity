@@ -2637,11 +2637,13 @@ MonoBehaviour:
   buttonSprites:
   - {fileID: 21300000, guid: 4404c195f42196240ad50d50de96bc85, type: 3}
   correctAnswers:
-  - 0.5
-  - 62
+  - 0.2
+  - 0.4
   - 50.7
   answerCheckStartIndexFromEnd: 7
   answerCheckEndIndexFromEnd: 4
+  puzzleEpisodes: 8
+  puzzleNumber: 3
   nextScene: {fileID: 102900000, guid: ad3a771d148ea3d42a44d3bc4defe465, type: 3}
   errorImage: {fileID: 1431413176}
   closeButton: {fileID: 337175905}

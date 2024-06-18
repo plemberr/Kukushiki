@@ -48,6 +48,6 @@ EditorBuildSettings:
     path: Assets/Scenes/LvL_12.unity
     guid: 557653bf102caa9429762ca84cc1fcf8
   - enabled: 1
-    path: Assets/Scenes/Puzzle.unity
+    path: Assets/Scenes/PuzzleScene.unity
     guid: 68641315a80b8204db275225c8551d61
   m_configObjects: {}
