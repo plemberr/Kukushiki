@@ -265,7 +265,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -417,7 +417,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToDeactivateInSampleScene: []
   objectsToActivateInPlayScene: []
-  nextScene: {fileID: 102900000, guid: dfbf74acf522b8942bb4c0fdbc592b0d, type: 3}
+  nextSceneIndex: 1
 --- !u!114 &1193105180
 MonoBehaviour:
   m_ObjectHideFlags: 0

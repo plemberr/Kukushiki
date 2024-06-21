@@ -1,5 +1,4 @@
 using TMPro;
-using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -30,7 +29,6 @@ public class manager : MonoBehaviour
     public int puzzleEpisodes = 5; // эпизод с пазлом
     public int puzzleNumber = 1;
 
-    public SceneAsset nextScene;
     public Image errorImage;
     public Button closeButton; //  нопка крестика
 
@@ -132,9 +130,10 @@ public class manager : MonoBehaviour
         // ѕереключаем объекты на следующий подуровень
         if (currentSublevelIndex >= sublevels.Count)
         {
-            if (nextScene != null)
+            int nextSceneBuildIndex = SceneManager.GetActiveScene().buildIndex + 1;
+            if (nextSceneBuildIndex < SceneManager.sceneCountInBuildSettings)
             {
-                SceneManager.LoadScene(nextScene.name);
+                SceneManager.LoadScene(nextSceneBuildIndex);
             }
             else
             {

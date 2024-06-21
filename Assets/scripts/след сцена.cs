@@ -1,4 +1,3 @@
-using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -6,7 +5,7 @@ public class SceneSwitcher : MonoBehaviour
 {
     public GameObject[] objectsToDeactivateInSampleScene;
     public GameObject[] objectsToActivateInPlayScene;
-    public SceneAsset nextScene;
+    public int nextSceneIndex; // Индекс следующей сцены в Build Settings
 
     void OnMouseDown()
     {
@@ -25,6 +24,7 @@ public class SceneSwitcher : MonoBehaviour
             obj.SetActive(true);
         }
 
-        SceneManager.LoadScene(nextScene.name);
+        SceneManager.LoadScene(nextSceneIndex); // Загрузка следующей сцены по индексу
     }
 }
+

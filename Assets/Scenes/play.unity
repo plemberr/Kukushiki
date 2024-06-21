@@ -177,7 +177,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToDeactivateInSampleScene: []
   objectsToActivateInPlayScene: []
-  nextScene: {fileID: 102900000, guid: 2cda990e2423bbf4892e6590ba056729, type: 3}
+  nextSceneIndex: 0
 --- !u!61 &142068365
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -454,7 +454,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToDeactivateInSampleScene: []
   objectsToActivateInPlayScene: []
-  nextScene: {fileID: 102900000, guid: 979f944966052284b83bb19576c9e075, type: 3}
+  nextSceneIndex: 7
 --- !u!1 &294883083
 GameObject:
   m_ObjectHideFlags: 0
@@ -604,7 +604,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToDeactivateInSampleScene: []
   objectsToActivateInPlayScene: []
-  nextScene: {fileID: 102900000, guid: b5bb427dede866242b64706f01bce611, type: 3}
+  nextSceneIndex: 5
 --- !u!1 &621286371
 GameObject:
   m_ObjectHideFlags: 0
@@ -754,7 +754,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToDeactivateInSampleScene: []
   objectsToActivateInPlayScene: []
-  nextScene: {fileID: 102900000, guid: c0736dffcde447642ab84068ec9736c7, type: 3}
+  nextSceneIndex: 10
 --- !u!1 &713863872
 GameObject:
   m_ObjectHideFlags: 0
@@ -904,7 +904,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToDeactivateInSampleScene: []
   objectsToActivateInPlayScene: []
-  nextScene: {fileID: 102900000, guid: 8f2eb542ced275b43855b24aa1549f9f, type: 3}
+  nextSceneIndex: 4
 --- !u!1 &745775024
 GameObject:
   m_ObjectHideFlags: 0
@@ -1054,7 +1054,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToDeactivateInSampleScene: []
   objectsToActivateInPlayScene: []
-  nextScene: {fileID: 102900000, guid: 90c275726fb903b44b225d78ff5ad482, type: 3}
+  nextSceneIndex: 12
 --- !u!1 &929144422
 GameObject:
   m_ObjectHideFlags: 0
@@ -1201,7 +1201,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToDeactivateInSampleScene: []
   objectsToActivateInPlayScene: []
-  nextScene: {fileID: 102900000, guid: 68641315a80b8204db275225c8551d61, type: 3}
+  nextSceneIndex: 14
 --- !u!61 &1023888538
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1363,8 +1363,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -3}
-  m_SizeDelta: {x: 1920, y: 1080}
+  m_AnchoredPosition: {x: 0, y: -1.4999}
+  m_SizeDelta: {x: 1920, y: 1083}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1056504313
 MonoBehaviour:
@@ -1553,7 +1553,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToDeactivateInSampleScene: []
   objectsToActivateInPlayScene: []
-  nextScene: {fileID: 102900000, guid: aa6c0f563eb0f3d4aac54777995f50a8, type: 3}
+  nextSceneIndex: 8
 --- !u!1 &1369685444
 GameObject:
   m_ObjectHideFlags: 0
@@ -1703,7 +1703,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToDeactivateInSampleScene: []
   objectsToActivateInPlayScene: []
-  nextScene: {fileID: 102900000, guid: bb0e7ec5256027a499b88453240aa692, type: 3}
+  nextSceneIndex: 11
 --- !u!1 &1393898534
 GameObject:
   m_ObjectHideFlags: 0
@@ -1853,7 +1853,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToDeactivateInSampleScene: []
   objectsToActivateInPlayScene: []
-  nextScene: {fileID: 102900000, guid: 12b612f04c0294a46820eab0996c93eb, type: 3}
+  nextSceneIndex: 3
 --- !u!1 &1541641921
 GameObject:
   m_ObjectHideFlags: 0
@@ -2003,7 +2003,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToDeactivateInSampleScene: []
   objectsToActivateInPlayScene: []
-  nextScene: {fileID: 102900000, guid: 783652cb9da8ad344b011460ad3cd5bf, type: 3}
+  nextSceneIndex: 2
 --- !u!1 &1854725699
 GameObject:
   m_ObjectHideFlags: 0
@@ -2153,7 +2153,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToDeactivateInSampleScene: []
   objectsToActivateInPlayScene: []
-  nextScene: {fileID: 102900000, guid: ad3a771d148ea3d42a44d3bc4defe465, type: 3}
+  nextSceneIndex: 6
 --- !u!1 &1955837208
 GameObject:
   m_ObjectHideFlags: 0
@@ -2487,7 +2487,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToDeactivateInSampleScene: []
   objectsToActivateInPlayScene: []
-  nextScene: {fileID: 102900000, guid: 57373a0f8a485294fb983cd635075ebb, type: 3}
+  nextSceneIndex: 9
 --- !u!1 &2035474239
 GameObject:
   m_ObjectHideFlags: 0
@@ -2542,7 +2542,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToDeactivateInSampleScene: []
   objectsToActivateInPlayScene: []
-  nextScene: {fileID: 102900000, guid: 557653bf102caa9429762ca84cc1fcf8, type: 3}
+  nextSceneIndex: 13
 --- !u!114 &2035474242
 MonoBehaviour:
   m_ObjectHideFlags: 0
