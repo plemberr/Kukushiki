@@ -1496,11 +1496,11 @@ MonoBehaviour:
   correctAnswers:
   - 0.8836
   - 0.52
-  - 50.7
+  - 0.125
   answerCheckStartIndexFromEnd: 4
   answerCheckEndIndexFromEnd: 1
   puzzleEpisodes: 5
-  puzzleNumber: 4
+  puzzleNumber: 11
   nextScene: {fileID: 102900000, guid: 979f944966052284b83bb19576c9e075, type: 3}
   errorImage: {fileID: 361475824}
   closeButton: {fileID: 1460786048}
@@ -1926,7 +1926,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: 7b36777a2e5623c4bb1b17632dd2c325, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9a6d1ecb95039f6469b9d8dc91c99ea9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

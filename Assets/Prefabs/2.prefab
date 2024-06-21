@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1611632775850213361}
   - component: {fileID: 9131280875525985591}
-  - component: {fileID: 6446388729945854605}
   - component: {fileID: 296528139088504220}
   - component: {fileID: 1457542803643651589}
   - component: {fileID: 5746535473356041279}
@@ -48,18 +47,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4618114454995553941}
   m_CullTransparentMesh: 1
---- !u!114 &6446388729945854605
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4618114454995553941}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 44ae0317704c6d843b46448c451f5de2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &296528139088504220
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -117,6 +104,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44ae0317704c6d843b46448c451f5de2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  initialPosition: {x: 0, y: 0, z: 0}
+  correctPosition: {x: 0, y: 0, z: 0}
+  snapThreshold: 0.5
+  puzzlePieceName: 
 --- !u!212 &5746535473356041279
 SpriteRenderer:
   m_ObjectHideFlags: 0

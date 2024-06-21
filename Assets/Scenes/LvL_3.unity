@@ -1089,11 +1089,11 @@ MonoBehaviour:
   correctAnswers:
   - 2
   - 114
-  - 50.7
+  - 3.5
   answerCheckStartIndexFromEnd: 4
   answerCheckEndIndexFromEnd: 1
   puzzleEpisodes: 7
-  puzzleNumber: 2
+  puzzleNumber: 5
   nextScene: {fileID: 102900000, guid: b5bb427dede866242b64706f01bce611, type: 3}
   errorImage: {fileID: 289086450}
   closeButton: {fileID: 2033934378}
@@ -2679,7 +2679,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: 976d1f5de72a70c4ab9f37a619420c10, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5e9c1da0d7aa84e47b602fcb3e937f9a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

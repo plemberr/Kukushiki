@@ -258,6 +258,26 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 1.77
       objectReference: {fileID: 0}
+    - target: {fileID: 1457542803643651589, guid: e3e18eeff2c99b449a0c43627cbee7d2, type: 3}
+      propertyPath: puzzlePieceName
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1457542803643651589, guid: e3e18eeff2c99b449a0c43627cbee7d2, type: 3}
+      propertyPath: correctPosition.x
+      value: -0.16
+      objectReference: {fileID: 0}
+    - target: {fileID: 1457542803643651589, guid: e3e18eeff2c99b449a0c43627cbee7d2, type: 3}
+      propertyPath: correctPosition.y
+      value: -2.72
+      objectReference: {fileID: 0}
+    - target: {fileID: 1457542803643651589, guid: e3e18eeff2c99b449a0c43627cbee7d2, type: 3}
+      propertyPath: initialPosition.x
+      value: 6.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 1457542803643651589, guid: e3e18eeff2c99b449a0c43627cbee7d2, type: 3}
+      propertyPath: initialPosition.y
+      value: 2.77
+      objectReference: {fileID: 0}
     - target: {fileID: 1611632775850213361, guid: e3e18eeff2c99b449a0c43627cbee7d2, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -320,11 +340,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1611632775850213361, guid: e3e18eeff2c99b449a0c43627cbee7d2, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 3.5
+      value: 10.1
       objectReference: {fileID: 0}
     - target: {fileID: 1611632775850213361, guid: e3e18eeff2c99b449a0c43627cbee7d2, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -2.9
+      value: 2.6
       objectReference: {fileID: 0}
     - target: {fileID: 1611632775850213361, guid: e3e18eeff2c99b449a0c43627cbee7d2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -393,6 +413,26 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 1.77
       objectReference: {fileID: 0}
+    - target: {fileID: 1457542803643651589, guid: e3e18eeff2c99b449a0c43627cbee7d2, type: 3}
+      propertyPath: puzzlePieceName
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1457542803643651589, guid: e3e18eeff2c99b449a0c43627cbee7d2, type: 3}
+      propertyPath: correctPosition.x
+      value: -3.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 1457542803643651589, guid: e3e18eeff2c99b449a0c43627cbee7d2, type: 3}
+      propertyPath: correctPosition.y
+      value: -2.72
+      objectReference: {fileID: 0}
+    - target: {fileID: 1457542803643651589, guid: e3e18eeff2c99b449a0c43627cbee7d2, type: 3}
+      propertyPath: initialPosition.x
+      value: -6.62
+      objectReference: {fileID: 0}
+    - target: {fileID: 1457542803643651589, guid: e3e18eeff2c99b449a0c43627cbee7d2, type: 3}
+      propertyPath: initialPosition.y
+      value: 0.53
+      objectReference: {fileID: 0}
     - target: {fileID: 1611632775850213361, guid: e3e18eeff2c99b449a0c43627cbee7d2, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -455,11 +495,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1611632775850213361, guid: e3e18eeff2c99b449a0c43627cbee7d2, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0.61
+      value: -2.95
       objectReference: {fileID: 0}
     - target: {fileID: 1611632775850213361, guid: e3e18eeff2c99b449a0c43627cbee7d2, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -2.9
+      value: 0.35
       objectReference: {fileID: 0}
     - target: {fileID: 1611632775850213361, guid: e3e18eeff2c99b449a0c43627cbee7d2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -528,6 +568,26 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 1.77
       objectReference: {fileID: 0}
+    - target: {fileID: 1457542803643651589, guid: e3e18eeff2c99b449a0c43627cbee7d2, type: 3}
+      propertyPath: puzzlePieceName
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1457542803643651589, guid: e3e18eeff2c99b449a0c43627cbee7d2, type: 3}
+      propertyPath: correctPosition.x
+      value: 2.73
+      objectReference: {fileID: 0}
+    - target: {fileID: 1457542803643651589, guid: e3e18eeff2c99b449a0c43627cbee7d2, type: 3}
+      propertyPath: correctPosition.y
+      value: -2.72
+      objectReference: {fileID: 0}
+    - target: {fileID: 1457542803643651589, guid: e3e18eeff2c99b449a0c43627cbee7d2, type: 3}
+      propertyPath: initialPosition.x
+      value: 6.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 1457542803643651589, guid: e3e18eeff2c99b449a0c43627cbee7d2, type: 3}
+      propertyPath: initialPosition.y
+      value: -1.83
+      objectReference: {fileID: 0}
     - target: {fileID: 1611632775850213361, guid: e3e18eeff2c99b449a0c43627cbee7d2, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -590,11 +650,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1611632775850213361, guid: e3e18eeff2c99b449a0c43627cbee7d2, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 6.39
+      value: 10.1
       objectReference: {fileID: 0}
     - target: {fileID: 1611632775850213361, guid: e3e18eeff2c99b449a0c43627cbee7d2, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -2.9
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 1611632775850213361, guid: e3e18eeff2c99b449a0c43627cbee7d2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -920,6 +980,26 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 1.77
       objectReference: {fileID: 0}
+    - target: {fileID: 1457542803643651589, guid: e3e18eeff2c99b449a0c43627cbee7d2, type: 3}
+      propertyPath: puzzlePieceName
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1457542803643651589, guid: e3e18eeff2c99b449a0c43627cbee7d2, type: 3}
+      propertyPath: correctPosition.x
+      value: -3.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 1457542803643651589, guid: e3e18eeff2c99b449a0c43627cbee7d2, type: 3}
+      propertyPath: correctPosition.y
+      value: 0.88
+      objectReference: {fileID: 0}
+    - target: {fileID: 1457542803643651589, guid: e3e18eeff2c99b449a0c43627cbee7d2, type: 3}
+      propertyPath: initialPosition.x
+      value: -6.62
+      objectReference: {fileID: 0}
+    - target: {fileID: 1457542803643651589, guid: e3e18eeff2c99b449a0c43627cbee7d2, type: 3}
+      propertyPath: initialPosition.y
+      value: 2.77
+      objectReference: {fileID: 0}
     - target: {fileID: 1611632775850213361, guid: e3e18eeff2c99b449a0c43627cbee7d2, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -982,11 +1062,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1611632775850213361, guid: e3e18eeff2c99b449a0c43627cbee7d2, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0.61
+      value: -2.95
       objectReference: {fileID: 0}
     - target: {fileID: 1611632775850213361, guid: e3e18eeff2c99b449a0c43627cbee7d2, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.7
+      value: 2.6
       objectReference: {fileID: 0}
     - target: {fileID: 1611632775850213361, guid: e3e18eeff2c99b449a0c43627cbee7d2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1055,6 +1135,26 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 1.77
       objectReference: {fileID: 0}
+    - target: {fileID: 1457542803643651589, guid: e3e18eeff2c99b449a0c43627cbee7d2, type: 3}
+      propertyPath: puzzlePieceName
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1457542803643651589, guid: e3e18eeff2c99b449a0c43627cbee7d2, type: 3}
+      propertyPath: correctPosition.x
+      value: 2.73
+      objectReference: {fileID: 0}
+    - target: {fileID: 1457542803643651589, guid: e3e18eeff2c99b449a0c43627cbee7d2, type: 3}
+      propertyPath: correctPosition.y
+      value: 0.88
+      objectReference: {fileID: 0}
+    - target: {fileID: 1457542803643651589, guid: e3e18eeff2c99b449a0c43627cbee7d2, type: 3}
+      propertyPath: initialPosition.x
+      value: -6.62
+      objectReference: {fileID: 0}
+    - target: {fileID: 1457542803643651589, guid: e3e18eeff2c99b449a0c43627cbee7d2, type: 3}
+      propertyPath: initialPosition.y
+      value: 0.53
+      objectReference: {fileID: 0}
     - target: {fileID: 1611632775850213361, guid: e3e18eeff2c99b449a0c43627cbee7d2, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1117,11 +1217,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1611632775850213361, guid: e3e18eeff2c99b449a0c43627cbee7d2, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 6.39
+      value: -2.95
       objectReference: {fileID: 0}
     - target: {fileID: 1611632775850213361, guid: e3e18eeff2c99b449a0c43627cbee7d2, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.7
+      value: 0.35
       objectReference: {fileID: 0}
     - target: {fileID: 1611632775850213361, guid: e3e18eeff2c99b449a0c43627cbee7d2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1190,6 +1290,26 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 1.77
       objectReference: {fileID: 0}
+    - target: {fileID: 1457542803643651589, guid: e3e18eeff2c99b449a0c43627cbee7d2, type: 3}
+      propertyPath: puzzlePieceName
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1457542803643651589, guid: e3e18eeff2c99b449a0c43627cbee7d2, type: 3}
+      propertyPath: correctPosition.x
+      value: -0.16
+      objectReference: {fileID: 0}
+    - target: {fileID: 1457542803643651589, guid: e3e18eeff2c99b449a0c43627cbee7d2, type: 3}
+      propertyPath: correctPosition.y
+      value: 0.88
+      objectReference: {fileID: 0}
+    - target: {fileID: 1457542803643651589, guid: e3e18eeff2c99b449a0c43627cbee7d2, type: 3}
+      propertyPath: initialPosition.x
+      value: 6.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 1457542803643651589, guid: e3e18eeff2c99b449a0c43627cbee7d2, type: 3}
+      propertyPath: initialPosition.y
+      value: 0.53
+      objectReference: {fileID: 0}
     - target: {fileID: 1611632775850213361, guid: e3e18eeff2c99b449a0c43627cbee7d2, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1252,11 +1372,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1611632775850213361, guid: e3e18eeff2c99b449a0c43627cbee7d2, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 3.5
+      value: 10.1
       objectReference: {fileID: 0}
     - target: {fileID: 1611632775850213361, guid: e3e18eeff2c99b449a0c43627cbee7d2, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.7
+      value: 0.35
       objectReference: {fileID: 0}
     - target: {fileID: 1611632775850213361, guid: e3e18eeff2c99b449a0c43627cbee7d2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1325,6 +1445,26 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 1.77
       objectReference: {fileID: 0}
+    - target: {fileID: 1457542803643651589, guid: e3e18eeff2c99b449a0c43627cbee7d2, type: 3}
+      propertyPath: puzzlePieceName
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1457542803643651589, guid: e3e18eeff2c99b449a0c43627cbee7d2, type: 3}
+      propertyPath: correctPosition.x
+      value: -3.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 1457542803643651589, guid: e3e18eeff2c99b449a0c43627cbee7d2, type: 3}
+      propertyPath: correctPosition.y
+      value: -0.92
+      objectReference: {fileID: 0}
+    - target: {fileID: 1457542803643651589, guid: e3e18eeff2c99b449a0c43627cbee7d2, type: 3}
+      propertyPath: initialPosition.x
+      value: 6.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 1457542803643651589, guid: e3e18eeff2c99b449a0c43627cbee7d2, type: 3}
+      propertyPath: initialPosition.y
+      value: 0.53
+      objectReference: {fileID: 0}
     - target: {fileID: 1611632775850213361, guid: e3e18eeff2c99b449a0c43627cbee7d2, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1387,11 +1527,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1611632775850213361, guid: e3e18eeff2c99b449a0c43627cbee7d2, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0.61
+      value: 10.1
       objectReference: {fileID: 0}
     - target: {fileID: 1611632775850213361, guid: e3e18eeff2c99b449a0c43627cbee7d2, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -1.1
+      value: 0.35
       objectReference: {fileID: 0}
     - target: {fileID: 1611632775850213361, guid: e3e18eeff2c99b449a0c43627cbee7d2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1460,6 +1600,26 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 1.77
       objectReference: {fileID: 0}
+    - target: {fileID: 1457542803643651589, guid: e3e18eeff2c99b449a0c43627cbee7d2, type: 3}
+      propertyPath: puzzlePieceName
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1457542803643651589, guid: e3e18eeff2c99b449a0c43627cbee7d2, type: 3}
+      propertyPath: correctPosition.x
+      value: 2.73
+      objectReference: {fileID: 0}
+    - target: {fileID: 1457542803643651589, guid: e3e18eeff2c99b449a0c43627cbee7d2, type: 3}
+      propertyPath: correctPosition.y
+      value: -0.92
+      objectReference: {fileID: 0}
+    - target: {fileID: 1457542803643651589, guid: e3e18eeff2c99b449a0c43627cbee7d2, type: 3}
+      propertyPath: initialPosition.x
+      value: -6.62
+      objectReference: {fileID: 0}
+    - target: {fileID: 1457542803643651589, guid: e3e18eeff2c99b449a0c43627cbee7d2, type: 3}
+      propertyPath: initialPosition.y
+      value: 2.77
+      objectReference: {fileID: 0}
     - target: {fileID: 1611632775850213361, guid: e3e18eeff2c99b449a0c43627cbee7d2, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1522,11 +1682,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1611632775850213361, guid: e3e18eeff2c99b449a0c43627cbee7d2, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 6.39
+      value: -2.95
       objectReference: {fileID: 0}
     - target: {fileID: 1611632775850213361, guid: e3e18eeff2c99b449a0c43627cbee7d2, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -1.1
+      value: 2.6
       objectReference: {fileID: 0}
     - target: {fileID: 1611632775850213361, guid: e3e18eeff2c99b449a0c43627cbee7d2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1647,11 +1807,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2129759451661260339, guid: 511a4a008b9e004419f41b551f19fea1, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0.61
+      value: 10.1
       objectReference: {fileID: 0}
     - target: {fileID: 2129759451661260339, guid: 511a4a008b9e004419f41b551f19fea1, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 2.5
+      value: 2.6
       objectReference: {fileID: 0}
     - target: {fileID: 2129759451661260339, guid: 511a4a008b9e004419f41b551f19fea1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1696,7 +1856,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 898029043353807643, guid: 511a4a008b9e004419f41b551f19fea1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1678383626}
   m_SourcePrefab: {fileID: 100100000, guid: 511a4a008b9e004419f41b551f19fea1, type: 3}
 --- !u!1 &1611910088
 GameObject:
@@ -1792,6 +1955,22 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 2129759451661260339, guid: 511a4a008b9e004419f41b551f19fea1, type: 3}
   m_PrefabInstance: {fileID: 1574484353}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1678383626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1678383619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44ae0317704c6d843b46448c451f5de2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initialPosition: {x: 6.44, y: 2.77, z: 0}
+  correctPosition: {x: -3.05, y: 2.68, z: 0}
+  snapThreshold: 0.5
+  puzzlePieceName: 1
 --- !u!1001 &1686162152
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1823,6 +2002,26 @@ PrefabInstance:
     - target: {fileID: 296528139088504220, guid: e3e18eeff2c99b449a0c43627cbee7d2, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 1.77
+      objectReference: {fileID: 0}
+    - target: {fileID: 1457542803643651589, guid: e3e18eeff2c99b449a0c43627cbee7d2, type: 3}
+      propertyPath: puzzlePieceName
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1457542803643651589, guid: e3e18eeff2c99b449a0c43627cbee7d2, type: 3}
+      propertyPath: correctPosition.x
+      value: -0.16
+      objectReference: {fileID: 0}
+    - target: {fileID: 1457542803643651589, guid: e3e18eeff2c99b449a0c43627cbee7d2, type: 3}
+      propertyPath: correctPosition.y
+      value: 2.68
+      objectReference: {fileID: 0}
+    - target: {fileID: 1457542803643651589, guid: e3e18eeff2c99b449a0c43627cbee7d2, type: 3}
+      propertyPath: initialPosition.x
+      value: 6.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 1457542803643651589, guid: e3e18eeff2c99b449a0c43627cbee7d2, type: 3}
+      propertyPath: initialPosition.y
+      value: -1.83
       objectReference: {fileID: 0}
     - target: {fileID: 1611632775850213361, guid: e3e18eeff2c99b449a0c43627cbee7d2, type: 3}
       propertyPath: m_Pivot.x
@@ -1886,11 +2085,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1611632775850213361, guid: e3e18eeff2c99b449a0c43627cbee7d2, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 3.5
+      value: 10.1
       objectReference: {fileID: 0}
     - target: {fileID: 1611632775850213361, guid: e3e18eeff2c99b449a0c43627cbee7d2, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 2.5
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 1611632775850213361, guid: e3e18eeff2c99b449a0c43627cbee7d2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2110,6 +2309,26 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 1.77
       objectReference: {fileID: 0}
+    - target: {fileID: 1457542803643651589, guid: e3e18eeff2c99b449a0c43627cbee7d2, type: 3}
+      propertyPath: puzzlePieceName
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1457542803643651589, guid: e3e18eeff2c99b449a0c43627cbee7d2, type: 3}
+      propertyPath: correctPosition.x
+      value: -0.16
+      objectReference: {fileID: 0}
+    - target: {fileID: 1457542803643651589, guid: e3e18eeff2c99b449a0c43627cbee7d2, type: 3}
+      propertyPath: correctPosition.y
+      value: -0.92
+      objectReference: {fileID: 0}
+    - target: {fileID: 1457542803643651589, guid: e3e18eeff2c99b449a0c43627cbee7d2, type: 3}
+      propertyPath: initialPosition.x
+      value: -6.62
+      objectReference: {fileID: 0}
+    - target: {fileID: 1457542803643651589, guid: e3e18eeff2c99b449a0c43627cbee7d2, type: 3}
+      propertyPath: initialPosition.y
+      value: -1.83
+      objectReference: {fileID: 0}
     - target: {fileID: 1611632775850213361, guid: e3e18eeff2c99b449a0c43627cbee7d2, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2172,11 +2391,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1611632775850213361, guid: e3e18eeff2c99b449a0c43627cbee7d2, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 3.5
+      value: -2.95
       objectReference: {fileID: 0}
     - target: {fileID: 1611632775850213361, guid: e3e18eeff2c99b449a0c43627cbee7d2, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -1.1
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 1611632775850213361, guid: e3e18eeff2c99b449a0c43627cbee7d2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2313,6 +2532,26 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 1.77
       objectReference: {fileID: 0}
+    - target: {fileID: 1457542803643651589, guid: e3e18eeff2c99b449a0c43627cbee7d2, type: 3}
+      propertyPath: puzzlePieceName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1457542803643651589, guid: e3e18eeff2c99b449a0c43627cbee7d2, type: 3}
+      propertyPath: correctPosition.x
+      value: 2.73
+      objectReference: {fileID: 0}
+    - target: {fileID: 1457542803643651589, guid: e3e18eeff2c99b449a0c43627cbee7d2, type: 3}
+      propertyPath: correctPosition.y
+      value: 2.68
+      objectReference: {fileID: 0}
+    - target: {fileID: 1457542803643651589, guid: e3e18eeff2c99b449a0c43627cbee7d2, type: 3}
+      propertyPath: initialPosition.x
+      value: -6.62
+      objectReference: {fileID: 0}
+    - target: {fileID: 1457542803643651589, guid: e3e18eeff2c99b449a0c43627cbee7d2, type: 3}
+      propertyPath: initialPosition.y
+      value: -1.83
+      objectReference: {fileID: 0}
     - target: {fileID: 1611632775850213361, guid: e3e18eeff2c99b449a0c43627cbee7d2, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2375,11 +2614,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1611632775850213361, guid: e3e18eeff2c99b449a0c43627cbee7d2, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 6.39
+      value: -2.95
       objectReference: {fileID: 0}
     - target: {fileID: 1611632775850213361, guid: e3e18eeff2c99b449a0c43627cbee7d2, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 2.5
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 1611632775850213361, guid: e3e18eeff2c99b449a0c43627cbee7d2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

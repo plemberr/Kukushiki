@@ -1,12 +1,12 @@
 using UnityEngine;
-using UnityEngine.UI;
 
 public class Music : MonoBehaviour
 {
+    public SpriteRenderer musicSpriteRenderer; // Ссылка на SpriteRenderer для управления спрайтами
     public Sprite onMusic;
     public Sprite offMusic;
 
-    public Button MusicButton; // Ссылка на кнопку управления музыкой
+    public GameObject musicControlObject; // Ссылка на игровой объект с коллайдером
     public bool isOn;
     public AudioSource ad;
 
@@ -20,13 +20,13 @@ public class Music : MonoBehaviour
             instance = this;
             DontDestroyOnLoad(gameObject); // Сохраняем объект при переходе на новую сцену
 
-            // Находим кнопку только на нужной сцене, если она не была установлена в инспекторе
-            if (MusicButton == null)
+            // Находим игровой объект только на нужной сцене, если он не был установлен в инспекторе
+            if (musicControlObject == null)
             {
-                MusicButton = FindObjectOfType<Button>();
-                if (MusicButton == null)
+                musicControlObject = GameObject.Find("MusicControlObject");
+                if (musicControlObject == null)
                 {
-                    Debug.LogError("MusicButton not found in the scene!");
+                    Debug.LogError("MusicControlObject not found in the scene!");
                 }
             }
         }
@@ -42,18 +42,35 @@ public class Music : MonoBehaviour
         // Загружаем сохраненное значение звука
         if (PlayerPrefs.GetInt("music") == 0)
         {
-            MusicButton.image.sprite = onMusic; // Устанавливаем спрайт для включенного звука
+            musicSpriteRenderer.sprite = onMusic; // Устанавливаем спрайт для включенного звука
             ad.enabled = true;
             isOn = true;
         }
         else
         {
-            MusicButton.image.sprite = offMusic; // Устанавливаем спрайт для выключенного звука
+            musicSpriteRenderer.sprite = offMusic; // Устанавливаем спрайт для выключенного звука
             ad.enabled = false;
             isOn = false;
         }
+    }
 
-        MusicButton.onClick.AddListener(ToggleSound); // Добавляем слушатель клика
+    void Update()
+    {
+        if (Input.GetMouseButtonDown(0)) // Проверяем нажатие левой кнопки мыши
+        {
+            // Проверяем, был ли нажат игровой объект
+            if (musicControlObject != null && IsMouseOverGameObject())
+            {
+                ToggleSound();
+            }
+        }
+    }
+
+    private bool IsMouseOverGameObject()
+    {
+        // Проверяем, находится ли мышь над игровым объектом
+        RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
+        return hit.collider != null && hit.collider.gameObject == musicControlObject;
     }
 
     public void ToggleSound()
@@ -63,9 +80,11 @@ public class Music : MonoBehaviour
 
         // Включаем или выключаем звук
         ad.enabled = isOn;
-        MusicButton.image.sprite = isOn ? onMusic : offMusic; // Устанавливаем спрайт в зависимости от состояния звука
+        musicSpriteRenderer.sprite = isOn ? onMusic : offMusic; // Устанавливаем спрайт в зависимости от состояния звука
     }
 }
+
+
 
 
 

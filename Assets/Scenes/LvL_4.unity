@@ -1311,7 +1311,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: 31f359983bf58794880056420172a698, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 765444f3ee5aa57479811caa017323b4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2639,11 +2639,11 @@ MonoBehaviour:
   correctAnswers:
   - 0.2
   - 0.4
-  - 50.7
+  - 0.28
   answerCheckStartIndexFromEnd: 7
   answerCheckEndIndexFromEnd: 4
   puzzleEpisodes: 8
-  puzzleNumber: 3
+  puzzleNumber: 0
   nextScene: {fileID: 102900000, guid: ad3a771d148ea3d42a44d3bc4defe465, type: 3}
   errorImage: {fileID: 1431413176}
   closeButton: {fileID: 337175905}

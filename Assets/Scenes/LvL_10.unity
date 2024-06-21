@@ -819,11 +819,11 @@ MonoBehaviour:
   correctAnswers:
   - 190
   - 15
-  - 50.7
+  - 15
   answerCheckStartIndexFromEnd: 4
   answerCheckEndIndexFromEnd: 1
   puzzleEpisodes: 5
-  puzzleNumber: 1
+  puzzleNumber: 10
   nextScene: {fileID: 102900000, guid: 90c275726fb903b44b225d78ff5ad482, type: 3}
   errorImage: {fileID: 31856819}
   closeButton: {fileID: 1330947925}
@@ -1286,7 +1286,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 277127e3aa9c68d4aa4096e26ef2b5a9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2046,7 +2046,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 277127e3aa9c68d4aa4096e26ef2b5a9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2245,7 +2245,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: 31f359983bf58794880056420172a698, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 182c8e55a447462428098dc8de03f5b0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2668,7 +2668,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 277127e3aa9c68d4aa4096e26ef2b5a9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2918,7 +2918,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 277127e3aa9c68d4aa4096e26ef2b5a9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
